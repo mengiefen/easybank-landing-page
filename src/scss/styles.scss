@@ -1,0 +1,54 @@
+@import "custom";
+@import "~bootstrap";
+
+* {
+  color: red;
+}
+
+body {
+  position: relative;
+  background-image: url('../images/image-mockups.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top 0 right -32%;
+}
+.navbar {
+  background: #eee;
+  z-index: 999;
+}
+.header .navbar-container {  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+
+}
+
+.nav-item {
+  margin: 0 0.8rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.btn-request {
+  padding-left: 1.5rem;
+  background: rgb(14, 114, 106);
+  border-radius: 20%;
+  color: #eee;
+}
+
+.welcome-section { 
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-intro {
+  width: 40%;
+  margin: auto 0;
+}
+
+
