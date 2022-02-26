@@ -1,8 +1,21 @@
 @import 'custom';
 @import '~bootstrap';
 
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$Dark-Blue: hsl(233, 26%, 24%);
+$Lime-Green: hsl(136, 65%, 51%);
+$Bright-Cyan: hsl(192, 70%, 51%);
+
+$Grayish-Blue: hsl(233, 8%, 62%);
+$Light-Grayish-Blue: hsl(220, 16%, 96%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+$Font-size: 1.8rem;
+
 * {
   color: #111;
+  font-family: 'Public Sans', serif;
 }
 
 body {
@@ -12,10 +25,12 @@ body {
   background-size: 50%;
   background-position: top 0 right -32%;
 }
+
 .navbar {
   background: #eee;
   z-index: 999;
 }
+
 .header .navbar-container {
   width: 100%;
   display: flex;
@@ -37,6 +52,7 @@ body {
   background: rgb(14, 114, 106);
   border-radius: 2rem;
   color: #eee;
+  background-image: linear-gradient(to right, $Lime-Green 0%, $Bright-Cyan  100%)
 }
 
 .welcome-section {
@@ -52,9 +68,83 @@ body {
 
 .web-heading {
   font-size: 3rem;
+  font-weight: 700;
+}
+
+.welcome-description {
+  color: $Dark-Blue;
+}
+
+.services {
+  display: flex;
+  gap: 1rem;
+}
+
+.service-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .service-pic {
   width: 5rem;
-  height:auto;  
+  height: auto;
 }
+
+.articles-items {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body {
+  padding: 1rem;
+}
+.article-image {
+  width: 100%;
+  height: 40%;
+}
+
+.articles-items .card-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.article-author {
+  font-size: 0.8rem;
+}
+
+.article-author,
+.articles-items .card-text {
+  color: $Dark-Blue;
+  line-height: 1.5rem;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #16A085 0%, #F4D03F  51%, #16A085  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
