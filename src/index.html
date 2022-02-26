@@ -6,6 +6,10 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
@@ -58,8 +62,8 @@
     </header>
 
     <!-- Home -->
-    <section class="welcome-section mx-5 px-5">
-      <div class="welcome-intro">
+    <section class="welcome-section d-flex justify-content-between ps-5">
+      <div class="welcome-intro mx-5">
         <h1 class="web-heading pb-5">Next geberation digital banking</h1>
         <p class="welcome-description">
           Take your financial life online. Your Easybank account will be a one-stop-shop for
@@ -68,17 +72,22 @@
 
         <a href="#" class="btn btn-request">Request Invite</a>
       </div>
+      <img
+        src="images/image-mockups.png"
+        class="img-fluid px-0 mx-0 ms-auto img-mockup"
+        alt="image mockup"
+      />
     </section>
 
-    <section class="services-section mx-5 px-5 my-5 py-5">
-      <div class="w-50 my-5">
+    <section class="services-section px-5 my-5 py-5">
+      <div class="w-50 m-5">
         <h2 class="sub-heading mb-4 card-title">Why choose Easybank?</h2>
         <p class="service-description card-text">
           We leverage Open Banking to turn your bank account into your financial hub. Control your
           finances like never before.
         </p>
       </div>
-      <div class="container services gap-2 my-5 px-0 mx-0">
+      <div class="container services gap-2 m-5 px-0 mx-0">
         <div class="service-type card pt-3">
           <img
             src="./images/icon-online.svg"
@@ -200,12 +209,43 @@
       </div>
     </section>
 
-    <footer class="footer mx-5 px-5 my-5 pb-5"></footer>
+    <footer class="footer d-flex  py-5 px-5 mt-5">
+      <div class="d-flex gap-5 w-70 px-5">
+        <div class="d-flex flex-column me-5">
+          <div class="logo-footer-holder mb-4">
+            <a href="#" class="attribution"
+              ><img src="./images/logo-white.svg" alt="Website logo"
+            /></a>
+          </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+          <div class="btn-group d-flex justify-content-center gap-3">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-pinterest"></i>
+            <i class="bi bi-instagram"></i>
+          </div>
+        </div>
+
+        <ul class="links-col-1 list-group me-5">
+          <li class="list-group-item">About Us</li>
+          <li class="list-group-item">Contact</li>
+          <li class="list-group-item">Blog</li>
+        </ul>
+        <ul class="links-col-2 list-group text-light list-type-none">
+          <li class="list-group-item">Careers</li>
+          <li class="list-group-item">Support</li>
+          <li class="list-group-item">Privacy Policy</li>
+        </ul>
+      </div>
+      <div class="w-30 ms-auto d-flex flex-column align-center">
+        <button class="btn btn-request ps-5 pe-5 me-5" type="button">Search</button>
+        <p class="mt-4 text-light">&copy; All rights reserved.</p>
+      </div>
+
+      <!-- Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>. -->
+    </footer>
   </body>
 </html>
