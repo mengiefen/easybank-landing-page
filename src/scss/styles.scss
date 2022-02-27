@@ -72,7 +72,8 @@ body {
   z-index: 9999;
 }
 
-i {
+.navbar-close i,
+.navbar-toggler i {
   font-size: 3rem;
   position: absolute;
   top: 0;
@@ -202,6 +203,7 @@ h2 {
 .img-mockup {
   width: 70vw;
   height: auto;
+
   @include device(tab) {
     width: 55vw;
     height: auto;
