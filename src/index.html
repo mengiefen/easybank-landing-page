@@ -15,7 +15,7 @@
   <body>
     <!--Header -->
     <header class="header py-auto">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
           <div class="navbar-container">
             <div>
@@ -62,9 +62,11 @@
     </header>
 
     <!-- Home -->
-    <section class="welcome-section d-flex justify-content-between ps-5">
-      <div class="welcome-intro mx-5">
-        <h1 class="web-heading pb-5">Next geberation digital banking</h1>
+    <section
+      class="welcome-section d-flex flex-column-reverse flex-md-row justify-content-between mx-auto px-3 px-sm-5 py-lg-5 my-5"
+    >
+      <div class="welcome-intro py-auto">
+        <h1 class="web-heading pb-2 pb-md-5">Next generation digital banking</h1>
         <p class="welcome-description">
           Take your financial life online. Your Easybank account will be a one-stop-shop for
           spending, saving, budgeting, investing, and much more.
@@ -79,15 +81,15 @@
       />
     </section>
 
-    <section class="services-section px-5 my-5 py-5">
-      <div class="w-50 m-5">
+    <section class="services-section mx-auto px-3 px-sm-5 py-md-5 my-md-5">
+      <div class="service-heading my-5">
         <h2 class="sub-heading mb-4 card-title">Why choose Easybank?</h2>
         <p class="service-description card-text">
           We leverage Open Banking to turn your bank account into your financial hub. Control your
           finances like never before.
         </p>
       </div>
-      <div class="container services gap-2 m-5 px-0 mx-0">
+      <div class="services my-5">
         <div class="service-type card pt-3">
           <img
             src="./images/icon-online.svg"
@@ -145,9 +147,9 @@
       </div>
     </section>
 
-    <section class="articles-section mx-5 px-5 my-5 pb-5">
+    <section class="articles-section mx-auto px-3 px-sm-5 py-5 my-5">
       <h2 class="sub-heading mb-4">Latest Articles</h2>
-      <div class="articles-items container px-0 mx -0">
+      <div class="articles-items">
         <div class="card">
           <img
             src="./images/image-currency.jpg"
@@ -209,8 +211,8 @@
       </div>
     </section>
 
-    <footer class="footer d-flex  py-5 px-5 mt-5">
-      <div class="d-flex gap-5 w-70 px-5">
+    <footer class="footer d-flex flex-column flex-md-row py-5 px-2 px-md-5 mt-5">
+      <div class="d-flex flex-column flex-sm-row mx-auto mx-md-0 gap-3 gap-lg-4 px-2 px-lg-5">
         <div class="d-flex flex-column me-5">
           <div class="logo-footer-holder mb-4">
             <a href="#" class="attribution"
@@ -218,7 +220,7 @@
             /></a>
           </div>
 
-          <div class="btn-group d-flex justify-content-center gap-3">
+          <div class="btn-group d-flex gap-2 gap-lg-3">
             <i class="bi bi-facebook"></i>
             <i class="bi bi-youtube"></i>
             <i class="bi bi-twitter"></i>
@@ -227,7 +229,7 @@
           </div>
         </div>
 
-        <ul class="links-col-1 list-group me-5">
+        <ul class="links-col-1 list-group me-2 me-lg-5">
           <li class="list-group-item">About Us</li>
           <li class="list-group-item">Contact</li>
           <li class="list-group-item">Blog</li>
@@ -238,8 +240,8 @@
           <li class="list-group-item">Privacy Policy</li>
         </ul>
       </div>
-      <div class="w-30 ms-auto d-flex flex-column align-center">
-        <button class="btn btn-request ps-5 pe-5 me-5" type="button">Search</button>
+      <div class="mx-auto mt-3 mt-md-0 ms-md-auto d-flex flex-column">
+        <button class="btn btn-request px-0 px-lg-5" type="button">Request invite</button>
         <p class="mt-4 text-light">&copy; All rights reserved.</p>
       </div>
 
