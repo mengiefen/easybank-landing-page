@@ -73,33 +73,30 @@ body {
 }
 
 i {
-  font-size: 1.8rem;
+  font-size: 3rem;
   position: absolute;
-  top: 0.5rem;
+  top: 0;
   right: 2rem;
   color: $Dark-Blue;
 }
 
-.navbar-close i {
-  color: $Light-Grayish-Blue;
-}
 .navbar-collapse {
   display: none;
 }
 
 .open {
-  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
+  width: 95%;
   top: 0;
-  width: 100vw;
+  left: 0;
   height: auto;
   z-index: 999;
-
-  background-color: $Dark-Blue;
-  padding: 4rem auto;
+  background-color: $Light-Grayish-Blue;
+  margin: 0 2.5%;
+  padding: 4rem 0;
 }
 
 .nav-item {
@@ -114,12 +111,19 @@ i {
 
 .nav-link {
   text-decoration: none;
-  color: $White;
+  color: $Dark-Blue;
   transition: all 1s;
+}
 
-  @include device(tab) {
-    color: $Dark-Blue;
-  }
+.overlay {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(45, 49, 77, 0.6);
 }
 
 .btn-request {
@@ -196,9 +200,8 @@ h2 {
 }
 
 .img-mockup {
-  width: auto;
-  height: 60vh;
-
+  width: 70vw;
+  height: auto;
   @include device(tab) {
     width: 55vw;
     height: auto;
