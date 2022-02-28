@@ -62,6 +62,7 @@ body {
   border: none;
   outline: none;
   color: $Dark-Blue;
+  z-index: 999;
 }
 
 .navbar-close {
@@ -70,6 +71,8 @@ body {
   outline: none;
   cursor: pointer;
   z-index: 9999;
+  padding: 0;
+  
 }
 
 .navbar-close i,
@@ -77,8 +80,12 @@ body {
   font-size: 3rem;
   position: absolute;
   top: 0;
-  right: 2rem;
+  right: 1.2rem;
   color: $Dark-Blue;
+}
+
+.navbar-close i {
+  top: -0.8rem;
 }
 
 .navbar-collapse {
@@ -96,12 +103,12 @@ body {
   height: auto;
   z-index: 999;
   background-color: $Light-Grayish-Blue;
-  margin: 0 2.5%;
-  padding: 4rem 0;
+  margin: 4rem 2.5% 0 2.5%;
+  padding: 1rem 0 4rem 0;
+  border-radius: 5px;
 }
 
 .nav-item {
-  margin: 0.2rem 0;
   font-size: 1.5rem;
 
   @include device(tab) {
@@ -113,7 +120,7 @@ body {
 .nav-link {
   text-decoration: none;
   color: $Dark-Blue;
-  transition: all 1s;
+  transition: color 1s;
 }
 
 .overlay {
@@ -133,6 +140,15 @@ body {
   color: #eee;
   background-image: linear-gradient(to right, $Lime-Green 0%, $Bright-Cyan 100%);
   transition: all 0.75s;
+  font-weight: 700;
+
+  @include device(tab){
+    padding: 0.5rem 0.5rem;   
+  }
+  
+  @include device(lap){
+    padding: 0.5rem 1.5rem;   
+  }
 }
 
 .btn-request:hover {
@@ -298,20 +314,20 @@ h2 {
   background-color: $Dark-Blue;
   border: none;
   color: $White;
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 
 .list-group-item:hover {
   color: $Bright-Cyan;
 }
 
-.footer i {
+.btn-group .bi {
   color: $White;
   font-size: 1.5rem;
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 
-.footer i:hover {
+.btn-group .bi:hover {
   color: $Bright-Cyan;
 }
 
