@@ -120,7 +120,12 @@ body {
 .nav-link {
   text-decoration: none;
   color: $Dark-Blue;
-  transition: color 1s;
+  transition: all 1s;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover{
+  border-bottom: 3px solid $Lime-Green;
 }
 
 .overlay {
