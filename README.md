@@ -1,4 +1,5 @@
-# Frontend Mentor - Easybank landing page
+# Easybank landing page - Frontend Mentor Challenge
+
 
 ![](https://img.shields.io/badge/MENGSTU-FENTAW-success) [![](https://img.shields.io/badge/LIVE-DEMO-blue)](https://mengiefen.github.io/easybank-landing-page/)
 
